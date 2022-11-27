@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+.font-iceberg {
+  font-family: "Iceberg", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem!important;
+  line-height: 59px;
+}
+
+.font-jaldi-1 {
+  font-family: 'Jaldi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem!important;
+}
+
+.font-jaldi-1-5 {
+  font-family: 'Jaldi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem!important;
+}
+
+.font-jaldi-28 {
+  font-family: 'Jaldi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem!important;
+}
+
+.font-jaldi-3 {
+  font-family: 'Jaldi';
+  font-style:normal;
+  font-weight: 400;
+  font-size:3rem!important;
+}
+
+.bg-dark-transparent {
+  background-color: rgb(33, 37, 41,0.8)!important;
+}
+
+.logo-height {
+  height: 5rem;
+  weight: 5rem;
+}
+
+#page-content {
+  width: 100%!important;
+}
+
+#title {
+  position: relative;
+  width: 100%!important;
+  height: 674px;
+  min-height: 50%!important;
+  max-height: 674px;
+  overflow: hidden!important;
+}
+
+#hamsterTitle {
+  width: 100%!important;
+  height: 100%;
+  max-height:min-content;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #e3e3e3;
+  width: 100%;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.content-wiki {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #e3e3e3;
+  width: 100%;
+  height: 100%
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.content-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+  align-content: center;
+  
+}
+
+.content-col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.content-col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+
+.content-col {
+  flex: 1 0 0%;
+  
+
+}
+
+.max-width-2 {
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.vl {
+  border-left: 6px solid rgb(255, 255, 255);
+  height: 1;
+}
+
+#hamster-cards .card {
+  max-height: 400px;
+}
+
+.card-img {
+  width: 100%!important;
+  height: 100%;
+  max-height:min-content;
+  object-fit: cover;
+  z-index: 0;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.bd-1-rem {
+  border-radius: 1rem!important;
+}
+
+#hamster-cards .row {
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+  align-content: center;
+  justify-content: space-around;
+}
+
+#hamster-cards .col {
+  flex: 0 1 auto;
+  width: 30%;
+  margin: .5rem!important;
+}
+
+#hamster-cards .card-img-overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+#hamster-cards .card-img-overlay:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#hamster-cards .card-text {
+  color: white;
+}
+
+.hamster-card-flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer-basic {
+  background-color: rgb(33, 37, 41)!important;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 2%;
+}
+
+.footer-basic ul, 
+.footer-basic p {
+  text-align: center;
+}
+
+.footer-basic ul a {
+  text-decoration: none;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: center!important;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .logo-height {
+    height: 3rem;
+    weight: 3rem;
+  }
+
+  .content-row {
+    display: flex;
+    align-content: center;
+  }
+
+  #hamster-cards .row {
+    display: flex;
+    align-content: center;
+  }
+
+  .content-col-3,
+  .content-col-1,
+  .content-col {
+    width: 100%;
+  }
+
+  .vl {
+    display: hidden;
+  }
+
+  .font-iceberg {
+    font-size: 1.5rem!important;
+  }
+
+  .font-jaldi-28 {
+    font-size: 1.25rem!important;
+  }
+
+  .font-jaldi-1 {
+    font-size: 1rem!important;
+  }
+
+  .font-jaldi-1-5 {
+    font-size: 1.25rem!important;
+  }
+
+  .font-jaldi-3 {
+    font-size: 1.75rem!important;
+  }
+
+  .card-img-overlay {
+    padding: 0.5rem!important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #hamster-cards .row {
+    position: relative;
+  }
+  #hamster-cards .col {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+  }
+  #hamster-cards .card-img-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  #hamster-cards .card-img-overlay:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #hamster-cards {
+    max-width: 1800px;
+  }
+}
+
+
+#hamster-specific {
+  position: absolute;
+  top: 0;
+  display: flex;
+  font-display: flex;
+}
+
+.hamster-img {
+  width: 100%; 
+  object-fit: contain;
+  background-color: black;
+  display: flex;
+  box-shadow: 0 1rem 1rem -1rem #111;
+}
+
+.container-f {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: justify;
+}
+
+.bg {
+  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  font-size: 3vw;
+}
+
+.icon {
+  position: fixed !important;
+  left: 0.2rem;
+  bottom: 1rem;
+  width: 6vw;
+  height: 6vw;
+}
+
+
+
+
+
+
+
+/* .content {
+  display: flex;
+}
+
+.title {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+  -webkit-text-stroke-color: #e3e3e3;
+  -webkit-text-stroke-width: 0.03rem;
+  font-size: 7vw;
+  color:black;
+}
+
+.info {
+  position: bottom;
+  font-size: 5vw;
+  color:black;
+}
+
+#hamster-pic {
+  position: top;
+  width: 100%;
+  max-height: 100rem;
+  object-fit: contain;
+} */
+
+
+
